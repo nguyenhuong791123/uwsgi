@@ -30,13 +30,13 @@ RUN python get-pip.py
 #RUN pip install readline
 
 # virtualenvインストール
-RUN pip install virtualenv
+RUN pip3 install virtualenv
 
 # uwsgiインスト
-RUN pip install uwsgi
+RUN pip3 install uwsgi
 
 WORKDIR /var/www
 RUN virtualenv app
-RUN /bin/bash -c "source app/bin/activate; pip install -r requirements.txt"
+RUN /bin/bash -c "source app/bin/activate; pip3 install -r app/requirements.txt"
 
 CMD ["uwsgi", "--ini", "/var/www/uwsgi.ini"]
