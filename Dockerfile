@@ -37,6 +37,6 @@ RUN pip3 install uwsgi
 
 WORKDIR /var/www
 RUN virtualenv app
-RUN /bin/bash -c "source app/bin/activate; pip3 install -r app/requirements.txt"
+RUN /bin/bash -c "source app/bin/activate; pip3 install -r requirements.txt"
 
 CMD ["uwsgi", "--ini", "/var/www/uwsgi.ini"]

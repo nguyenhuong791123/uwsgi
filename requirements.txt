@@ -34,7 +34,6 @@ psycopg2==2.7.4
 psycopg2-binary==2.7.4
 pycparser==2.18
 pycrypto==2.6.1
-pyminizip==0.2.1
 PyMySQL==0.9.2
 PySocks==1.6.8
 PyYAML==3.12
