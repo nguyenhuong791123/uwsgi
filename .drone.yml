@@ -1,0 +1,11 @@
+kind: pipeline
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: uwsgi
+  pull: default
+  image: ./Dockerfile
